@@ -1,0 +1,10 @@
+version: '3'
+services:
+  brave:
+    build: .
+    ports:
+      - "5900:5900"
+      - "6080:6080"
+    environment:
+      - VNC_PASSWORD=vncpass123
+    restart: unless-stopped
